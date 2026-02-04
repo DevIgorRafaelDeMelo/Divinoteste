@@ -5,9 +5,9 @@ import { db } from "./firebase";
 import logo from "./assets/Logo.png";
 import Img from "./assets/formatura.jpeg";
 import Img01 from "./assets/15anos.jpeg";
-import Img1 from "./assets/casamento.jpeg";
+import Img3 from "./assets/casamento.jpeg";
 import Img2 from "./assets/vestido24.jpeg";
-import Img3 from "./assets/vestido20.jpeg";
+import Img1 from "./assets/vestido20.jpeg";
 import Img4 from "./assets/WhatsApp Image 2026-02-01 at 10.03.27.jpeg";
 
 export default function App() {
