@@ -9,6 +9,7 @@ import Img3 from "./assets/casamento.jpeg";
 import Img2 from "./assets/vestido24.jpeg";
 import Img1 from "./assets/vestido20.jpeg";
 import Img4 from "./assets/WhatsApp Image 2026-02-01 at 10.03.27.jpeg";
+import V1 from "./assets/Vestido1.jpeg";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -106,7 +107,7 @@ export default function App() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg">
+      <nav className="fixed top-0 left-0 w-full z-51 bg-white/20 backdrop-blur-lg">
         <div className="container mx-auto px-8 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img src={logo} alt="Logo Divino Estilo" className="h-24 w-auto" />
@@ -218,12 +219,12 @@ export default function App() {
           e.preventDefault();
           setShowCalendar(!showCalendar);
         }}
-        className="fixed bottom-5 right-5 px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full shadow hover:bg-yellow-600 transition"
+        className="fixed bottom-5 right-5 px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full shadow hover:bg-yellow-600 transition "
       >
         Agende sua Experiência
       </button>
 
-      <section className="relative flex flex-col md:flex-row h-[100vh] overflow-hidden  z-100">
+      <section className="relative flex flex-col md:flex-row h-[100vh] overflow-hidden  z-60">
         {/* Imagem para Desktop */}
         <div
           className="hidden md:block w-1/2 bg-cover bg-center"
@@ -325,7 +326,7 @@ export default function App() {
 
           <div className="bg-white border border-yellow-200 shadow-md rounded-lg overflow-hidden">
             <img
-              src={Img1}
+              src={V1}
               alt="Vestido de Gala"
               className="w-full h-80 object-cover"
             />

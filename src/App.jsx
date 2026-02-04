@@ -17,7 +17,7 @@ export default function App() {
       </main>
 
       {currentPage !== "catalogo" && currentPage !== "admin" && (
-        <section className="relative flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-gradient-to-r from-pink-50 via-white to-pink-100">
+        <section className="relative flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-gradient-to-r from-pink-50 via-white to-pink-100 -z-10 ">
           {/* Texto */}
           <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 font-serif">
