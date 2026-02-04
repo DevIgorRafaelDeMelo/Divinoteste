@@ -75,29 +75,40 @@ export default function App() {
               Contato
             </a>
             <button
-              onClick={() => setCurrentPage("home")}
+              onClick={() => {
+                setCurrentPage("home");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="relative transition duration-300 hover:text-yellow-500 
-                   after:content-[''] after:block after:w-0 after:h-[2px] 
-                   after:bg-yellow-500 after:transition-all after:duration-300 
-                   hover:after:w-full after:mx-auto"
+             after:content-[''] after:block after:w-0 after:h-[2px] 
+             after:bg-yellow-500 after:transition-all after:duration-300 
+             hover:after:w-full after:mx-auto"
             >
               Home
             </button>
+
             <button
-              onClick={() => setCurrentPage("catalogo")}
+              onClick={() => {
+                setCurrentPage("catalogo");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="relative transition duration-300 hover:text-yellow-500 
-                   after:content-[''] after:block after:w-0 after:h-[2px] 
-                   after:bg-yellow-500 after:transition-all after:duration-300 
-                   hover:after:w-full after:mx-auto"
+             after:content-[''] after:block after:w-0 after:h-[2px] 
+             after:bg-yellow-500 after:transition-all after:duration-300 
+             hover:after:w-full after:mx-auto"
             >
-              Catalogo
+              Catálogo
             </button>
+
             <button
-              onClick={() => setCurrentPage("admin")}
+              onClick={() => {
+                setCurrentPage("admin");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="relative transition duration-300 hover:text-yellow-500 
-                   after:content-[''] after:block after:w-0 after:h-[2px] 
-                   after:bg-yellow-500 after:transition-all after:duration-300 
-                   hover:after:w-full after:mx-auto"
+             after:content-[''] after:block after:w-0 after:h-[2px] 
+             after:bg-yellow-500 after:transition-all after:duration-300 
+             hover:after:w-full after:mx-auto"
             >
               Admin
             </button>
