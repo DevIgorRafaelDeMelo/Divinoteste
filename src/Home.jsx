@@ -107,7 +107,7 @@ export default function App() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg">
+      <nav className=" fixed top-0 left-0 w-full z-50 bg-white/20 backdrop-blur-lg">
         <div className="container mx-auto px-8 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img src={logo} alt="Logo Divino Estilo" className="h-24 w-auto" />
@@ -219,7 +219,7 @@ export default function App() {
           e.preventDefault();
           setShowCalendar(!showCalendar);
         }}
-        className="fixed bottom-5 right-5 px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full shadow hover:bg-yellow-600 transition -50"
+        className="hidden md:flex fixed bottom-5 right-5 px-6 py-3 bg-yellow-500 text-white font-semibold rounded-full shadow hover:bg-yellow-600 transition z-50"
       >
         Agende sua Experiência
       </button>
@@ -234,7 +234,7 @@ export default function App() {
         {/* Imagem para Mobile */}
         <div
           key={currentIndex}
-          className="block md:hidden absolute inset-0 h-full w-full bg-cover bg-center animate-zoomIn brightness-90"
+          className="block md:hidden absolute inset-0 h-full w-full bg-cover bg-center animate-zoomIn brightness-90 z-60"
           style={{ backgroundImage: `url(${images[currentIndex]})` }}
         ></div>
 

@@ -17,7 +17,7 @@ export default function App() {
       </main>
 
       {currentPage !== "catalogo" && currentPage !== "admin" && (
-        <section className="relative flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-gradient-to-r from-pink-50 via-white to-pink-100 -z-10 ">
+        <section className="relative flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-gradient-to-r from-pink-50 via-white to-pink-100  ">
           {/* Texto */}
           <div className="w-full md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 font-serif">
@@ -26,11 +26,20 @@ export default function App() {
             <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
               Cada peça da{" "}
               <span className="font-semibold text-pink-600">
-                Divina Vestida
+                Divino Vestido
               </span>{" "}
               é criada para transmitir elegância e sofisticação. Explore nossa
               coleção e encontre o look perfeito para cada ocasião.
             </p>
+            <button
+              onClick={() => {
+                setCurrentPage("catalogo");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className=" inline-block px-8 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-md hover:bg-pink-700 transition-transform hover:scale-105 "
+            >
+              Ver Catálogo
+            </button>
           </div>
 
           {/* Imagem */}
