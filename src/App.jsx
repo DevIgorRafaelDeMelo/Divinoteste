@@ -31,12 +31,6 @@ export default function App() {
               é criada para transmitir elegância e sofisticação. Explore nossa
               coleção e encontre o look perfeito para cada ocasião.
             </p>
-            <a
-              onClick={() => setCurrentPage("catalogo")}
-              className="inline-block px-8 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-md hover:bg-pink-700 transition-transform hover:scale-105"
-            >
-              Ver Catálogo
-            </a>
           </div>
 
           {/* Imagem */}
